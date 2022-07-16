@@ -4,6 +4,8 @@ const preNotes = [
   { id: "todo-2", name: "Eat", completed: true, deleted: false },
 ];
 
+//handles and changes the state based on parameters passed through reducer functions
+
 const tasksReducer = (state = preNotes, action) => {
   if (action.type === "add") {
     state = state.concat(action.payload);

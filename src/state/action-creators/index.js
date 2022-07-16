@@ -1,3 +1,5 @@
+// functions to dispatch action calls based on parameters passed, this functions are directly available to main components
+
 export const saveTask = (task) => {
   return (dispatch) => {
     dispatch({

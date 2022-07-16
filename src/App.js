@@ -5,10 +5,14 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 
 function App() {
+  // displays navbar and main function and wraps them in provider and persistgate
   return (
     <Provider store={store}>
       <PersistGate persistor={persistore}>
-        <div className="min-vh-100 bg-secondary overflow-auto">
+        <div
+          className="min-vh-100 overflow-auto"
+          style={{ backgroundColor: "#121212" }}
+        >
           <Navbar />
           <Main />
         </div>
